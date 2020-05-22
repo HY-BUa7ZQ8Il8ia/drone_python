@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <!--  モバイルで引き伸ばして綺麗にする  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  cssとjsを導入  -->
+    <link rel="stylesheet" href="/static/css/jquery.mobile-1.4.5.min.css" />
+    <script src="/static/js/jquery-1.11.1.min.js"></script>
+    <script src="/static/js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="/static/js/shake.js"></script>
+</head>
+<body>
+    <!--  ページ全体  -->
+    <div data-role="page">
+        <!--  ヘッダー  -->
+        <div data-role="header">
+            <!--  homeアイコンはimageフォルダ, cacheはロードを早くできる  -->
+            <a href="/" data-icon="home" data-dom-cache="false">home</a>
+            <h1>Drone World</h1>
+        </div>
+
+        <!--  メイン  -->
+        <div data-role="content">
+            {% block content %}{% endblock %}
+        </div>
+
+    </div>
+</body>
+</html>
